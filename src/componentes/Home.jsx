@@ -18,7 +18,7 @@ const Home = () => (
         <i className="fab fa-github"></i>
       </a>
 
-      <a href="https://wa.me/7751 4613" target="_blank" rel="noopener noreferrer">
+      <a href="https://wa.me/77514613" target="_blank" rel="noopener noreferrer">
         <i className="fab fa-whatsapp"></i>
       </a>
       </div>
