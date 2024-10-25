@@ -5,10 +5,10 @@ const Projects = () => {
   const projects = [
     { title: 'Unichamba', image: 'imagen1.png', 
     Description:'Sistema Universitario Ues dedicado a estudiantes para encontrar trabajos.' },
-    { title: 'Fylo', image: 'imagen2.png' ,Description:'Landing Page Statico (Boostrap + Css'},
+    { title: 'Fylo', image: 'imagen2.png' ,Description:'Landing Page Statico (Boostrap + Css)'},
     { title: 'KMusic', image: 'imagen3.png',Description:'Sitio Web Replica de Musica (React+Hml Responsive)' },
-    { title: 'Proyecto 4', image: 'ruta/a/imagen4.jpg' ,Description:''},
-    { title: 'Proyecto 5', image: 'ruta/a/imagen5.jpg' ,Description:''},
+    { title: 'BlogCafe', image: 'imagen4.png' ,Description:'Laging Page ( Utilizando Html + Css Grid + Flexbox)'},
+    { title: 'Omelette', image: 'imagen5.png' ,Description:'Lagind Page ( Utilizando Html + Css)'},
     { title: 'Proyecto 6', image: 'ruta/a/imagen6.jpg' ,Description:''},
     { title: 'Proyecto 7', image: 'ruta/a/imagen7.jpg' ,Description:''},
     { title: 'Proyecto 8', image: 'ruta/a/imagen8.jpg' ,Description:''},
