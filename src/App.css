@@ -39,7 +39,7 @@ padding-top: 45PX;
 }
 
 .contenidodelmenu a:hover {
-  background-color: #333;
+  background-color: #aca000a4;
   border-radius: 5px;
 }
 
@@ -61,10 +61,17 @@ padding-top: 45PX;
   text-align: left;
 }
 
+
+
 .info h1 {
   font-size: 3rem;
-  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+  transition: 0.2s; /* Suavizar la transición de hover */
+}
 
+.info h1:hover {
+  color: #09fa9de8; /* Color al pasar el mouse */
+  transform: scale(1.1); /* Efecto de escala al pasar el mouse */
 }
 
 .info p {
@@ -77,11 +84,16 @@ padding-top: 45PX;
   margin-top: 15px;
 }
 
-.social-icons a {
+.social-icons a i {
   color: #0073b1; /* LinkedIn color */
   margin-right: 15px;
   font-size: 1.5rem;
   text-decoration: none;
+  transition: 0.2s ;
+  &&:hover{
+    color: #ffffff;
+    transform: scale(1.3);
+  }
 }
 
 .profile-pic {
@@ -91,6 +103,13 @@ padding-top: 45PX;
   padding-left: 40px;
 }
 
+/**efecto para que la foto cambie de tamaño*/
+@keyframes fotoChange {
+  0% {  transform:  scale(1); }
+  25% {  transform:  scale(1.1); }
+  75% {  transform:  scale(1.2); }
+  }
+  
 .profile-pic img {
   width: 380px;
   height: 380px;
@@ -98,6 +117,7 @@ padding-top: 45PX;
   object-fit: cover;
   transition:  0.3s;
   box-shadow: 10px 5px #ffc403;
+  animation: fotoChange 5s infinite; 
   &&:hover{
     filter: brightness(120%);
     transform: scale(1.05);
@@ -179,6 +199,20 @@ padding-top: 45PX;
   align-items: center;
   opacity: 0; /* Ocultar texto por defecto */
   transition: opacity 0.3s ease; /* Transición suave */
+}
+
+.project-info button{
+  margin-top: 40px;
+  background-color: #0073b1; /* LinkedIn color */
+  color: #ffffff;
+  padding: 10px 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease; /* Transición suave */
+  &&:hover{
+    background-color: #0cad0c; /* LinkedIn hover color */
+  }
 }
 
 .project-card:hover .project-info {

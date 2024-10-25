@@ -13,7 +13,6 @@ function App() {
           <a href="#home">Inicio</a>
           <a href="#about">Acerca de mí</a>
           <a href="#projects">Proyectos</a>
-          <a href="#footer">Contacto</a>
         </div>
       </nav>
    
