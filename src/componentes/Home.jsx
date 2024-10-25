@@ -9,14 +9,17 @@ const Home = () => (
       <p>Soy Desarrollador Web Junior. Explora mis proyectos y descubre cómo cada línea 
         de código cuenta una historia.</p>
       <div className="social-icons">
-      <a href="https://wa.me/tu-numero" target="_blank" rel="noopener noreferrer">
-        <i className="fab fa-whatsapp"></i>
-      </a>
-      <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" rel="noopener noreferrer">
+      
+      <a href="https://www.linkedin.com/in/angel-aristides-alvarado-landaverde-322bb6246/" target="_blank" rel="noopener noreferrer">
         <i className="fab fa-linkedin"></i>
       </a>
-      <a href="https://github.com/tu-usuario" target="_blank" rel="noopener noreferrer">
+
+      <a href="https://github.com/angel6464" target="_blank" rel="noopener noreferrer">
         <i className="fab fa-github"></i>
+      </a>
+
+      <a href="https://wa.me/7751 4613" target="_blank" rel="noopener noreferrer">
+        <i className="fab fa-whatsapp"></i>
       </a>
       </div>
     </div>
