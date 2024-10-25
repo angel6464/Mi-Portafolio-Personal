@@ -114,7 +114,7 @@ padding-top: 45PX;
   width: 380px;
   height: 380px;
   border-radius: 50%;
-  object-fit: cover;
+  object-fit:cover;
   transition:  0.3s;
   box-shadow: 10px 5px #ffc403;
   animation: fotoChange 5s infinite; 
@@ -176,6 +176,13 @@ padding-top: 45PX;
   text-align: center;
   position: relative; /* Añadir para posicionar el texto */
   overflow: hidden; /* Para que el contenido no sobresalga */
+  transition:0.3s;
+  box-shadow: 5px 5px  #000000; 
+
+  &&:hover{
+    transform: scale(1.03); /* Efecto de escala al pasar el mouse */
+    box-shadow: 5px 5px 10px #ffd905; /* Añadir un shadow en el hover */
+  }
 }
 
 .project-card img {
@@ -243,10 +250,20 @@ padding-top: 45PX;
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media screen and (max-width: 900px) {
+  .contenidodelmenu {
+    top: 0;
+    display: flex;
+    justify-content: center;
+    padding-right: 0px;
+  }
+  
+  
   .home-container {
-    flex-direction: column;
-    text-align: center;
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 40px;
+  
   }
 
   .profile-pic img {
@@ -254,21 +271,130 @@ padding-top: 45PX;
     height: 150px;
   }
 
-  .about-container h2 {
-    font-size: 1.5rem;
+  .info h1 {
+    font-size: 2.2rem;
   }
-
-  .about-container p {
+  
+  .info p {
     font-size: 1rem;
+   
   }
 
-  .project-card {
-    width: calc(50% - 20px);
-  }
+ 
+* /*About Section */
+.about-container {
+  padding: 40px 100px;
+  background-color: #1e1e1e;
 }
 
-@media (max-width: 480px) {
-  .project-card {
-    width: 100%;
-  }
+.about-container h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
 }
+
+.about-container p {
+  line-height: 1.2;
+  text-align: justify;
+}
+
+
+
+  /*proyectos*/
+.projects-container {
+  padding: 60px 10px;
+  background-color: #121212;
+}
+
+
+.project-card {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: calc(80% );
+}
+
+.project-card img {
+  max-width: 275px;
+  height: 200px;
+}
+}
+
+@media screen and (max-width: 480px) {
+  
+  /*le ponemos paddin rigth 0 para que no tenga*/
+  .contenidodelmenu {
+  top: 0;
+  display: flex;
+  justify-content: center;
+  padding-right: 0px;
+}
+
+/* Home Section */
+.home-container {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 40px;
+
+}
+
+.info {
+  margin-left: 10px;
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.info h1 {
+  font-size: 2rem;
+}
+
+.info p {
+  font-size: 1rem;
+ 
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.profile-pic {
+  padding-left: 0px;
+}
+
+
+* /*About Section */
+.about-container {
+  padding: 10px 40px;
+  background-color: #1e1e1e;
+}
+
+.about-container h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.about-container p {
+  line-height: 1.2;
+  text-align: justify;
+}
+
+
+/*proyectos*/
+.projects-container {
+  padding: 60px 10px;
+  background-color: #121212;
+}
+
+
+.project-card {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: calc(80% );
+}
+
+.project-card img {
+  max-width: 275px;
+  height: 200px;
+}
+
+}
+

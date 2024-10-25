@@ -24,7 +24,7 @@ const Home = () => (
       </div>
     </div>
     <div className="profile-pic">
-      <img src="perfil.png" alt="Profile" />
+      <img src="perfil4.png" alt="Profile" />
     </div>
   </section>
 );
