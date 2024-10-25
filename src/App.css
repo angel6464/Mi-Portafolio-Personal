@@ -1,0 +1,240 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+.App {
+  text-align: center;
+}
+
+
+
+/* HEADER */
+.header{
+  gap: 20px;
+  width: 100%;
+ 
+}
+.contenidodelmenu {
+  top: 0;
+  background-color: #1f1f1f;
+padding-top: 45PX;
+  display: flex;
+  justify-content: right;
+  padding-right: 150px;
+}
+
+.contenidodelmenu a {
+  color: #e0e0e0;
+  text-decoration: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  
+  
+}
+
+.contenidodelmenu a:hover {
+  background-color: #333;
+  border-radius: 5px;
+}
+
+
+/* Home Section */
+.home-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 150px;
+
+}
+
+.info {
+  margin-left: 100px;
+  flex: 1;
+  padding: 20px;
+  text-align: left;
+}
+
+.info h1 {
+  font-size: 3rem;
+  color: #ffffff;
+
+}
+
+.info p {
+  font-size: 1.2rem;
+  color: #b0b0b0;
+ 
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  color: #0073b1; /* LinkedIn color */
+  margin-right: 15px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.profile-pic {
+  flex: 1;
+  display: flex;
+  justify-content: left;
+  padding-left: 40px;
+}
+
+.profile-pic img {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition:  0.3s;
+  box-shadow: 10px 5px #ffc403;
+  &&:hover{
+    filter: brightness(120%);
+    transform: scale(1.05);
+/*ahora vamos con el shadow*/
+    box-shadow: 15px 5px 10px #ffc404;
+  
+  }
+}
+
+
+/* About Section */
+.about-container {
+  padding: 60px 20px;
+  background-color: #1e1e1e;
+}
+
+.about-container h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.about-container p {
+  max-width: 800px;
+  margin: 20px auto;
+  font-size: 1.1rem;
+  color: #b0b0b0;
+  line-height: 1.6;
+}
+
+/* Projects Section */
+.projects-container {
+  padding: 60px 180px;
+  background-color: #121212;
+}
+
+.projects-container h2 {
+  font-size: 1.8rem;
+  color: #ffffff;
+}
+
+.project-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: calc(33.33% - 20px);
+  max-width: 300px;
+  height: 200px;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  position: relative; /* Añadir para posicionar el texto */
+  overflow: hidden; /* Para que el contenido no sobresalga */
+}
+
+.project-card img {
+
+  max-width: 300px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.project-info {
+  position: absolute; /* Colocar el texto de forma absoluta */
+  top: 0; /* Posicionar el texto en la parte superior */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente */
+  color: #ffffff;
+  display: flex; /* Centrar el texto */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Ocultar texto por defecto */
+  transition: opacity 0.3s ease; /* Transición suave */
+}
+
+.project-card:hover .project-info {
+  opacity: 1; /* Mostrar texto al pasar el mouse */
+}
+
+.project-card h3 {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.project-info p {
+  margin: 0; /* Ajustar el margen del párrafo */
+}
+
+/* Footer Section */
+.footer-container {
+  padding: 20px;
+  background-color: #1f1f1f;
+  color: #e0e0e0;
+  text-align: center;
+}
+
+.footer-container p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .home-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-pic img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .about-container p {
+    font-size: 1rem;
+  }
+
+  .project-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .project-card {
+    width: 100%;
+  }
+}
