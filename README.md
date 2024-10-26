@@ -1,4 +1,7 @@
-# React + Vite
+# React + Vite + Css puro
+Node version v20.18.0
+npm install
+npm run dev
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
