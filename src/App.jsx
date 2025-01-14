@@ -7,6 +7,7 @@ import Projects from './componentes/Projects'
 function App() {
   return (
     <>
+    
   <div className="App">
       <nav className="header">
         <div className="contenidodelmenu">

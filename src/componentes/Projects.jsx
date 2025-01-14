@@ -5,7 +5,7 @@ const Projects = () => {
   const projects = [
     { title: 'Unichamba', image: 'imagen1.png', 
     Description:'Sistema Universitario Ues dedicado a estudiantes para encontrar trabajos.',
-  direccionUrl:'' },
+  direccionUrl:'https://unichamba.com/inicio' },
     { title: 'Fylo', image: 'imagen2.png' ,Description:'Landing Page Statico (Boostrap + Css)',
       direccionUrl:'https://fyloangelalvarado.netlify.app/'},
     { title: 'KMusic', image: 'imagen3.png',Description:'Sitio Web Replica de Musica (React+Hml Responsive)',
