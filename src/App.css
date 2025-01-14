@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: linear-gradient(180deg, #000000, #1a0d19, #000000) !important; /* Cambio a 180deg para el gradiente vertical */
+  background: linear-gradient(180deg, #000000, #1a0d19, #000000); /* Cambio a 180deg para el gradiente vertical */
   background-size: 200% 200%;
   animation: colorShift 10s ease infinite;
   color: #e0e0e0;
